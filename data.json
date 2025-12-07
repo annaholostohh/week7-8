@@ -1,0 +1,20 @@
+{
+  "nimi": "Anna",
+  "perekonnanimi": "Holostõhh",
+  "vanus": 20,
+  "email": "anna@example.com",
+
+  "oskused": [
+    "HTML/CSS",
+    "JavaScript",
+    "Python",
+    "Figma",
+    "WordPress"
+  ],
+
+  "keeled": [
+    "Eesti (C1)",
+    "Inglise (C1)",
+    "Vene (emakeel)"
+  ]
+}

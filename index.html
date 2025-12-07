@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="et">
 <head>
     <meta charset="UTF-8">
@@ -6,35 +6,31 @@
     <title>Anna Holostõhh - CV</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/2cd21c05f9.js" crossorigin="anonymous"></script>
-    
 </head>
 
 <body>
     <div class="container">
 
         <header>
-            <h1>Anna Holostõhh - tulevane spetsialist digimaailmas</h1>
+            <h1 id="cv-name"></h1>
 
             <div class="carousel">
-                <img id="carousel-img" src="images/pexels-mareklevak-2265488.jpg" alt="Anna tööl">
+                <img id="carousel-img" src="images/pexels-mareklevak-2265488.jpg" alt="Anna tööhoos">
             </div>
         </header>
 
         <main class="main">
             <section class="description">
                 <h2 class="main-title">Lühitutvustus</h2>
-                <p class="description-text">
-                    Tulevane IT-spetsialist, kellel on huvi tarkvaraarenduse, disaini ja digilahenduste vastu. 
-                    Otsin võimalusi, kus saaksin rakendada oma oskusi ja õppida juurde praktilises keskkonnas.
-                </p>
+                <p id="cv-description" class="description-text"></p>
             </section>
 
             <div class="row-sections">
                 <section class="school">
                     <h2 class="main-title">Haridus</h2>
                     <ul class="school-list">
-                        <li>2011-2023 Tallinna Gümnaasium</li>
-                        <li>2023-2027 Tallinna Tehnikakõrgkool</li>
+                        <li>2011–2023 Tallinna Gümnaasium</li>
+                        <li>2023–2027 Tallinna Tehnikakõrgkool</li>
                         <li>2022 koolitus UX/UI Design</li>
                         <li>2024 projekt Nutika ajaplaneerimise rakendus</li>
                     </ul>
@@ -43,18 +39,19 @@
                 <section class="work">
                     <h2 class="main-title">Töökogemus</h2>
                     <ul class="work-list">
-                        <li>2024-2025 praktikant, IT-osakond XYZ</li>
+                        <li>2024–2025 praktikant, IT-osakond XYZ</li>
                     </ul>
                 </section>
             </div>
 
             <section class="qualification">
                 <h2 class="main-title">Kvalifikatsioonid</h2>
-                <ul class="qualification-list">
-                    <li>Keeled: eesti (C1), inglise (C1), vene (emakeel)</li>
-                    <li>Tarkvarad: Python, HTML/CSS, JavaScript, Figma, WordPress</li>
-                    <li>Pehmed oskused: ajaplaneerimine, probleemide lahendamine, loovus</li>
-                </ul>
+                <ul id="cv-skills" class="qualification-list"></ul>
+            </section>
+
+            <section class="languages">
+                <h2 class="main-title">Keeled</h2>
+                <ul id="cv-languages"></ul>
             </section>
 
             <hr>
@@ -64,7 +61,8 @@
             <section class="contact">
                 <h2 class="main-title">Kontaktandmed</h2>
                 <ul class="contact-list">
-                    <li>E-post: anna.näide@email.com</li>
+                    <li id="cv-email"></li>
+                    <li id="cv-age"></li>
                     <li>Telefon: +372 512 3456</li>
                 </ul>
             </section>
@@ -93,5 +91,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="loadData.js"></script>
 </body>
 </html>
